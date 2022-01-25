@@ -2,7 +2,7 @@
 const username=document.getElementById('username');
 const saveScoreBtn=document.getElementById('saveScoreBtn');
 const finalScore=document.getElementById('finalScore');  //poslednji rezultat, prikazuje se kada zavrsimo igru pa napisemo svoje ime
-const mostRecentScore=localStorage.getItem('mostRecentSore');
+const mostRecentScore=localStorage.getItem('mostRecentScore');
 
 const highScores=JSON.parse(localStorage.getItem("highScores")) || []; //kupimo poene iz storidza i pretvaramo ih u objekat, ako nema nista bice prazan niz samo
 const MAX_HIGH_SCORES=5; //koliko da prikaze najvecih poena na ekranu
